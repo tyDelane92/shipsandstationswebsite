@@ -73,11 +73,11 @@ body, html {
 }
 
 #stars-back {
-  background-image: url('assets/stars-back.png');
+  background-image: url('assets/bigger-symmetrical-cross-stars.png');
 }
 
 #stars-mid {
-  background-image: url('assets/stars-mid.png');
+  background-image: url('assets/even_larger_transparent_stars.png');
 }
 
 #stars-front {
