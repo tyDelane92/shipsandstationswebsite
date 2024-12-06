@@ -8,7 +8,7 @@ document.querySelector(".hamburger").addEventListener("click", function () {
 // Parallax Scrolling Effect
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
-  document.getElementById("stars-back").style.transform = `translateY(${scrollY * 0.1}px)`;
+  document.getElementById("stars-back").style.transform = `translateY(${scrollY * 0.9}px)`;
   document.getElementById("stars-mid").style.transform = `translateY(${scrollY * 0.3}px)`;
-  document.getElementById("stars-front").style.transform = `translateY(${scrollY * 0.5}px)`;
+  document.getElementById("stars-front").style.transform = `translateY(${scrollY * 0.1}px)`;
 });
