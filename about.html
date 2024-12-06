@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Ships and Stations</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ships and Stations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Hamburger Menu -->
-  <div id="menu">
-    <span class="hamburger">☰</span>
-    <div class="menu-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="news.html">News/Updates</a>
-      <a href="https://pay.shipsandstations.com" target="_blank">Pay</a>
+    <div class="dock">
+        <button class="hamburger" onclick="toggleDock()">☰</button>
+        <nav id="dockMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News/Updates</a></li>
+                <li><a href="#">Donate/Pay</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
-
-  <!-- Parallax Layers -->
-  <div class="parallax">
-    <div class="layer" id="stars-back"></div>
-    <div class="layer" id="stars-mid"></div>
-    <div class="layer" id="stars-front"></div>
-  </div>
-
-  <!-- Content -->
-  <div id="content">
-    <h1>About Ships and Stations</h1>
-    <p>Ships and Stations is a galaxy-wide game where you choose your path as a powerful corporation or a rebellious pirate. Build fleets, take down enemies, and make your mark in the universe.</p>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="content">
+        <h1>About Ships and Stations</h1>
+        <p>[Insert high-level overview from your description here.]</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
