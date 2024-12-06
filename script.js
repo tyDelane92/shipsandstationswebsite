@@ -1,14 +1,20 @@
-/* Static Elements */
-// Hamburger Menu
-document.querySelector(".hamburger").addEventListener("click", function () {
-  const menuLinks = document.querySelector(".menu-links");
-  menuLinks.style.display = menuLinks.style.display === "flex" ? "none" : "flex";
-});
+function toggleDock() {
+    const dockMenu = document.getElementById('dockMenu');
+    dockMenu.classList.toggle('open');
+}
 
-// Parallax Scrolling Effect
-window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  document.getElementById("stars-back").style.transform = `translateY(${scrollY * 0.1}px)`;
-  document.getElementById("stars-mid").style.transform = `translateY(${scrollY * 0.3}px)`;
-  document.getElementById("stars-front").style.transform = `translateY(${scrollY * 0.5}px)`;
-});
+function toggleMute() {
+    const audio = document.getElementById('background-music');
+    const volumeToggle = document.getElementById('volume-toggle');
+    audio.muted = !audio.muted;
+    volumeToggle.textContent = audio.muted ? '🔇' : '🔊';
+}
+
+function setVolume(value) {
+    const audio = document.getElementById('background-music');
+    audio.volume = value;
+}
+
+window.onload = function () {
+    document.getElementById('background-music').play();
+};

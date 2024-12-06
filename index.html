@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ships and Stations</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ships and Stations</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Hamburger Menu -->
-  <div id="menu">
-    <span class="hamburger">☰</span>
-    <div class="menu-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="news.html">News/Updates</a>
-      <a href="https://pay.shipsandstations.com" target="_blank">Pay</a>
+    <div class="dock">
+        <button class="hamburger" onclick="toggleDock()">☰</button>
+        <nav id="dockMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News/Updates</a></li>
+                <li><a href="#">Donate/Pay</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
     </div>
-  </div>
-
-  <!-- Static Elements -->
-  <div id="static-elements">
-    <img src="assets/title.png" id="title" alt="Game Title">
-    <img src="assets/ships.png" id="ships" alt="Ships">
-  </div>
-
-  <!-- Parallax Layers -->
-  <div class="parallax">
-    <div class="layer" id="stars-back"></div>
-    <div class="layer" id="stars-mid"></div>
-    <div class="layer" id="stars-front"></div>
-  </div>
-
-  <!-- Content -->
-  <div id="content">
-    <h1>Welcome to Ships and Stations</h1>
-    <p>Explore the galaxy, build your empire, and forge your legacy.</p>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="top-right">
+        <button id="volume-toggle" onclick="toggleMute()">🔇</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
+    </div>
+    <div class="parallax">
+        <div class="stars-back"></div>
+        <div class="stars-front"></div>
+        <div class="content">
+            <img src="title.png" alt="Ships and Stations" class="title">
+        </div>
+    </div>
+    <audio id="background-music" src="background.mp3" loop muted></audio>
+    <script src="script.js"></script>
 </body>
 </html>

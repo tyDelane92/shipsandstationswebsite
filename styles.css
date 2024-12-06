@@ -1,93 +1,122 @@
-/* General Styles */
+/* Reset */
 body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: black;
-  color: white;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-/* Hamburger Menu */
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: black;
+}
+
+.dock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.dock ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dock ul li {
+    margin: 10px 0;
+}
+
+.dock ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .hamburger {
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px;
-  background: white;
-  color: black;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
 }
 
-.menu-links {
-  display: none;
-  flex-direction: column;
-  background: black;
-  position: absolute;
-  padding: 10px;
+.top-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.menu-links a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 0;
+#volume-slider {
+    width: 100px;
 }
 
-/* Static Elements */
-#static-elements {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 900;
-}
-
-#title, #ships {
-  display: block;
-  margin: auto;
-  width: auto;
-  max-width: 80%;
-}
-
-/* Parallax Layers */
 .parallax {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
-.layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
+.stars-back, .stars-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-repeat: repeat-y;
+    z-index: 1;
 }
 
-#stars-back {
-  background-image: url('assets/stars-back.png');
+.stars-back {
+    background: url('stars-back.png') repeat-y;
+    animation: scrollBack 20s linear infinite;
 }
 
-#stars-mid {
-  background-image: url('assets/stars-mid.png');
+.stars-front {
+    background: url('stars-front.png') repeat-y;
+    animation: scrollFront 10s linear infinite;
 }
 
-#stars-front {
-  background-image: url('assets/stars-front.png');
+@keyframes scrollBack {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
 }
 
-/* Page Content */
-#content {
-  position: relative;
-  z-index: 500;
-  padding: 20px;
-  margin-top: 100vh;
+@keyframes scrollFront {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    max-width: 50%;
+    height: auto;
 }
