@@ -1,6 +1,6 @@
-function toggleDock() {
-    const dockMenu = document.getElementById('dockMenu');
-    dockMenu.classList.toggle('open');
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.width = sidebar.style.width === '250px' ? '60px' : '250px';
 }
 
 function toggleMute() {
@@ -16,5 +16,6 @@ function setVolume(value) {
 }
 
 window.onload = function () {
-    document.getElementById('background-music').play();
+    const audio = document.getElementById('background-music');
+    audio.play();
 };

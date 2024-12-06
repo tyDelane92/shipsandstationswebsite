@@ -1,53 +1,64 @@
-/* Reset */
+/* General Reset */
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     color: white;
     background: black;
 }
 
-.dock {
+/* Sidebar Dock */
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 25%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.9);
     z-index: 1000;
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease;
 }
 
-.dock ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dock ul li {
-    margin: 10px 0;
-}
-
-.dock ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.hamburger {
-    background: none;
-    border: none;
+.sidebar .hamburger {
     font-size: 24px;
-    color: white;
+    color: black;
+    margin: 10px;
     cursor: pointer;
 }
 
+.sidebar .dock {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sidebar .dock ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar .dock ul li {
+    margin: 20px 0;
+}
+
+.sidebar .dock ul li img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.sidebar .dock ul li img:hover {
+    transform: scale(1.1);
+}
+
+/* Persistent Volume Controls */
 .top-right {
     position: fixed;
     top: 10px;
@@ -61,6 +72,7 @@ body {
     width: 100px;
 }
 
+/* Parallax */
 .parallax {
     position: relative;
     overflow: hidden;
@@ -79,13 +91,13 @@ body {
 }
 
 .stars-back {
-    background: url('stars-back.png') repeat-y;
-    animation: scrollBack 20s linear infinite;
+    background: url('assets/stars-back.png') repeat-y;
+    animation: scrollBack 40s linear infinite;
 }
 
 .stars-front {
-    background: url('stars-front.png') repeat-y;
-    animation: scrollFront 10s linear infinite;
+    background: url('assets/stars-front.png') repeat-y;
+    animation: scrollFront 20s linear infinite;
 }
 
 @keyframes scrollBack {
@@ -106,6 +118,7 @@ body {
     }
 }
 
+/* Content */
 .content {
     position: relative;
     z-index: 2;
@@ -117,6 +130,6 @@ body {
 }
 
 .title {
-    max-width: 50%;
+    max-width: 90%;
     height: auto;
 }

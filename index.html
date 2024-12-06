@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dock">
-        <button class="hamburger" onclick="toggleDock()">☰</button>
-        <nav id="dockMenu">
+    <div class="sidebar">
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+        <nav class="dock">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News/Updates</a></li>
-                <li><a href="#">Donate/Pay</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="index.html"><img src="assets/home-icon.png" alt="Home" title="Home"></a></li>
+                <li><a href="about.html"><img src="assets/about-icon.png" alt="About" title="About"></a></li>
+                <li><a href="news.html"><img src="assets/news-icon.png" alt="News" title="News/Updates"></a></li>
+                <li><a href="https://pay.shipsandstations.com" target="_blank"><img src="assets/donate-icon.png" alt="Donate/Pay" title="Donate/Pay"></a></li>
+                <li><a href="#"><img src="assets/signup-icon.png" alt="Sign Up" title="Sign Up"></a></li>
             </ul>
         </nav>
     </div>
@@ -27,10 +27,10 @@
         <div class="stars-back"></div>
         <div class="stars-front"></div>
         <div class="content">
-            <img src="title.png" alt="Ships and Stations" class="title">
+            <img src="assets/title.png" alt="Ships and Stations" class="title">
         </div>
     </div>
-    <audio id="background-music" src="background.mp3" loop muted></audio>
+    <audio id="background-music" src="assets/background.mp3" loop muted></audio>
     <script src="script.js"></script>
 </body>
 </html>
