@@ -187,6 +187,8 @@ body {
     max-width: 80%; /* Ensures the image doesn’t exceed container width */
     height: auto; /* Keeps aspect ratio */
     z-index: -1; /* Keeps it behind other elements */
+    background-color: rgba(49, 62, 112, 0.8);
+    border-radius: 2%/20%;
 }
 
 
