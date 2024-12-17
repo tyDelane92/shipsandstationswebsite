@@ -204,6 +204,7 @@ body {
       transform: translateX(-50%); /* Adjust for centering */
       max-width: 90%; /* Prevent oversized scaling */
       height: auto; /* Maintain aspect ratio */
+    }
   }
 
   .content {
