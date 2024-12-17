@@ -35,10 +35,10 @@ body {
 }
 
 .sidebar-header .header-logo img {
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -182,9 +182,9 @@ body {
 .title-image {
     position: fixed; /* Keeps the image in place even during scrolling */
     top: 10%; /* Center vertically */
-    left: calc(48% + 60px); /* Shift 85px to the right (half of 85px in calc) */
+    left: calc(49% + 55px); /* Shift 85px to the right (half of 85px in calc) */
     transform: translate(-50%, -50%); /* Center and account for the shift */
-    max-width: 90%; /* Ensures the image doesn’t exceed container width */
+    max-width: 80%; /* Ensures the image doesn’t exceed container width */
     height: auto; /* Keeps aspect ratio */
     z-index: -1; /* Keeps it behind other elements */
 }
@@ -196,10 +196,10 @@ body {
     @media (max-width: 805px) {
         .title-image {
             position: fixed; /* Ensures it remains fixed to the viewport */
-            top: 12%; /* Vertically center */
+            top:12%; /* Vertically center */
             left: 50%; /* Horizontally center */
             transform: translate(-50%, -50%); /* Center completely */
-            max-width: 100%; /* Ensure it scales down */
+            max-width: 90%; /* Ensure it scales down */
             height: auto; /* Maintain aspect ratio */
         }
     }
@@ -229,11 +229,6 @@ body {
     border-radius: 16px;
     background: rgba(49, 62, 112, 0.0);
     padding: 8px 10px;
-  }
-
-  .sidebar-header .header-logo img {
-    width: 40px;
-    height: 40px;
   }
 
   .sidebar-header .sidebar-toggler,
@@ -291,18 +286,4 @@ body {
 /* Default: Hide all pages */
 .page {
     display: none;
-  }
-
-
-.iframe-content {
-    position: fixed; /* Keeps the image in place while scrolling */
-    top: 0px;
-    left: 0px;
-    width: 100%; /* Covers the entire width of the viewport */
-    height: 100vh; /* Covers the entire height of the viewport */
-    background-image: url('wp2494430.jpg'); /* Your image */
-    background-size: cover; /* Ensures the image maintains its aspect ratio */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    z-index: -1; /* Puts the image behind everything else */
   }
