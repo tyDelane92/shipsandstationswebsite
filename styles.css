@@ -195,16 +195,16 @@ body {
 /* Responsive media query code for small screens */
 @media (max-width: 805px) {
 
-    @media (max-width: 805px) {
-        .title-image {
-            position: fixed; /* Ensures it remains fixed to the viewport */
-            top:12%; /* Vertically center */
-            left: 50%; /* Horizontally center */
-            transform: translate(-50%, -50%); /* Center completely */
-            max-width: 90%; /* Ensure it scales down */
-            height: auto; /* Maintain aspect ratio */
-        }
-    }
+  @media (max-width: 805px) {
+    .title-image {
+      position: relative; /* Relative to the flow of the document */
+      margin-top: 20px; /* Adjust this to the desired pixel distance */
+      display: block;
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust for centering */
+      max-width: 90%; /* Prevent oversized scaling */
+      height: auto; /* Maintain aspect ratio */
+  }
 
   .content {
       left: 0;
