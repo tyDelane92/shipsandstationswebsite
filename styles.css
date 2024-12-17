@@ -181,8 +181,8 @@ body {
 
 .title-image {
     position: fixed; /* Keeps the image in place even during scrolling */
-    top: 50%; /* Center vertically */
-    left: calc(50% + 42.5px); /* Shift 85px to the right (half of 85px in calc) */
+    top: 10%; /* Center vertically */
+    left: calc(48% + 60px); /* Shift 85px to the right (half of 85px in calc) */
     transform: translate(-50%, -50%); /* Center and account for the shift */
     max-width: 90%; /* Ensures the image doesn’t exceed container width */
     height: auto; /* Keeps aspect ratio */
@@ -196,7 +196,7 @@ body {
     @media (max-width: 805px) {
         .title-image {
             position: fixed; /* Ensures it remains fixed to the viewport */
-            top: 50%; /* Vertically center */
+            top: 12%; /* Vertically center */
             left: 50%; /* Horizontally center */
             transform: translate(-50%, -50%); /* Center completely */
             max-width: 100%; /* Ensure it scales down */
