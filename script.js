@@ -4,20 +4,20 @@ const pageData = {
         content: "<p>Welcome to our homepage!</p>"
     },
     news: {
-        title: "about.png",
-        content: "<p>Learn more about us on this page.</p>"
+        title: "news.png",
+        content: "<p>Keep up to date with the latest ships and stations updates.</p>"
     },
     about: {
-        title: "services.png",
-        content: "<p>Explore the services we offer.</p>"
+        title: "about.png",
+        content: "<p>Learn more about the project.</p>"
     },
     team: {
-        title: "portfolio.png",
-        content: "<p>View our portfolio to see our work.</p>"
+        title: "team.png",
+        content: "<p>Meet the talented team building this project.</p>"
     },
     pay: {
-        title: "contact.png",
-        content: "<p>Get in touch with us here.</p>"
+        title: "pay.png",
+        content: "<p>Make a dontation.</p>"
     }
 };
 
