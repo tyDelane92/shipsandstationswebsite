@@ -5,7 +5,6 @@ body {
 }
 
 * {
-    outline: 1px solid red; /* Highlights all elements to find overflows */
     box-sizing: border-box;
 }
 
@@ -51,7 +50,6 @@ body {
     transition: background-color 0.3s;
     text-align: center;
     overflow: visible;
-    border: 1px solid red; /* Debugging border */
 }
 
 .menu-bar button:hover {
