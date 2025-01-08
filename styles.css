@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px); /* Scales body font size */
+}
+
+* {
+    outline: 1px solid red; /* Highlights all elements to find overflows */
+    box-sizing: border-box;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: center; /* Centers all buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: clamp(40px, 9vh, 90px); /* Adjusted clamp for better scaling */
+    border: 1px solid blue; /* Debugging border */
+    gap: 20px; /* Adds consistent spacing between buttons */
+}
+
+.menu-bar button {
+    font-size: clamp(
+        8px, /* Minimum font size */
+        calc(12vw + 7vh) / 10, /* Preferred font size */
+        24px /* Maximum font size */
+    );
+    width: clamp(150px, calc(50vh + 7vw), 250px);
+    height: 100%; /* Matches the height of the menu bar */
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0px; /* Removes additional padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    overflow: visible;
+    border: 1px solid red; /* Debugging border */
+}
+
+.menu-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    margin: 0px;
+    text-align: center;
+    font-size: clamp(14px, 1.2vw, 18px); /* Scales content font size */
+}
+
+#page-title {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: clamp(16px, 2vw, 24px); /* Scales title font size */
+}
