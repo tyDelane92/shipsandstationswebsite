@@ -3,19 +3,19 @@ const pageData = {
         title: "home.png",
         content: "<p>Welcome to our homepage!</p>"
     },
-    about: {
+    news: {
         title: "about.png",
         content: "<p>Learn more about us on this page.</p>"
     },
-    services: {
+    about: {
         title: "services.png",
         content: "<p>Explore the services we offer.</p>"
     },
-    portfolio: {
+    team: {
         title: "portfolio.png",
         content: "<p>View our portfolio to see our work.</p>"
     },
-    contact: {
+    pay: {
         title: "contact.png",
         content: "<p>Get in touch with us here.</p>"
     }
