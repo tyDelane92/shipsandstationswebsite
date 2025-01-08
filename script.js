@@ -5,7 +5,7 @@ const pageData = {
     },
     news: {
         title: "news.png",
-        content: "<p>Keep up to date with the latest ships and stations updates.</p>"
+        content: "<p>Keep up to date with the latest from ships and stations.</p>"
     },
     about: {
         title: "about.png",
@@ -17,7 +17,7 @@ const pageData = {
     },
     pay: {
         title: "pay.png",
-        content: "<p>Make a dontation.</p>"
+        content: "<p>Make a donation.</p>"
     }
 };
 
