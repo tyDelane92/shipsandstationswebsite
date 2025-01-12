@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Ships and Stations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="background-overlay"></div>
+    <div class="parallax-layer stars-layer1"></div> <!-- New parallax layers -->
+    <div class="parallax-layer stars-layer2"></div>
+    <div class="parallax-layer stars-layer3"></div>
+    <div class="parallax-layer stars-layer4"></div>
+    <div class="parallax-layer stars-layer5"></div>
+    <div class="parallax-layer stars-layer6"></div>
+    <header class="menu-bar">
+        <div class="container">
+            <button onclick="showPage('news')" aria-label="News/Updates">News</button>
+            <div class="spacer"></div>
+            <button onclick="showPage('about')" aria-label="About">About</button>
+            <div class="spacer"></div>
+            <button onclick="showPage('home')" aria-label="Home">Home</button>
+            <div class="spacer"></div>
+            <button onclick="showPage('team')" aria-label="Team">Team</button>
+            <div class="spacer"></div>
+            <button onclick="location.href='https://pay.shipsandstations.com'" aria-label="Pay or Donate">Donate</button>
+        </div>
+    </header>
+        <div class ="container">
+            <main class="content">
+            <img id="page-title" src="" alt="Page Title">
+            <div id="page-content"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ships and Stations. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
