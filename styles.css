@@ -245,33 +245,33 @@ footer {
 
 
 .stars-layer1 {
-    height: 300dvh; /* Allows for looping effect */
+    height: 500dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/4k_stars_1x1.png');
 }
 
 .stars-layer2 {
-    height: 150dvh; /* Allows for looping effect */
+    height: 250dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/4k_stars.png');
 }
 
 .stars-layer3 {
-    height: 175dvh; /* Allows for looping effect */
+    height: 250dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/2x2layer1stars.png');
 }
 
 
 .stars-layer4 {
-    height: 125dvh; /* Allows for looping effect */
+    height: 200dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/2x2layer2stars.png');
 }
 
 .stars-layer5 {
-    height: 100dvh; /* Allows for looping effect */
+    height: 175dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/3x3layer5stars.png');
 }
 
 .stars-layer6 {
-    height: 100dvh; /* Allows for looping effect */
+    height: 175dvh; /* Allows for looping effect */
     background-image: url('Images/parallax stars/3x3layer6stars.png');
 }
 
