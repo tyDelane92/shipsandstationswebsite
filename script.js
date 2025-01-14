@@ -64,13 +64,13 @@ window.onload = () => {
 
 
 function updateParallax(scrollY) {
-    document.querySelector('.background').style.transform = `translateY(${scrollY * -0.002}px)`;
-    document.querySelector('.stars-layer1').style.transform = `translateY(${scrollY * -0.003}px)`;
-    document.querySelector('.stars-layer2').style.transform = `translateY(${scrollY * -0.004}px)`;
-    document.querySelector('.stars-layer3').style.transform = `translateY(${scrollY * -0.005}px)`;
-    document.querySelector('.stars-layer4').style.transform = `translateY(${scrollY * -0.006}px)`;
-    document.querySelector('.stars-layer5').style.transform = `translateY(${scrollY * -0.008}px)`;
-    document.querySelector('.stars-layer6').style.transform = `translateY(${scrollY * -0.02}px)`;
+    document.querySelector('.background').style.transform = `translateY(${scrollY * -0.003}px)`;
+    document.querySelector('.stars-layer1').style.transform = `translateY(${scrollY * -0.005}px)`;
+    document.querySelector('.stars-layer2').style.transform = `translateY(${scrollY * -0.007}px)`;
+    document.querySelector('.stars-layer3').style.transform = `translateY(${scrollY * -0.009}px)`;
+    document.querySelector('.stars-layer4').style.transform = `translateY(${scrollY * -0.01}px)`;
+    document.querySelector('.stars-layer5').style.transform = `translateY(${scrollY * -0.02}px)`;
+    document.querySelector('.stars-layer6').style.transform = `translateY(${scrollY * -0.03}px)`;
 }
 
 
